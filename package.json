@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
-    "start": "node dist/server.js",
+    "start": "node ./dist/server.js",
     "build": "tsc",
     "deploy": "scp -i pemfile.pem -r dist package.json ubuntu@35.174.154.91:/home/ubuntu/projects/SattoBot"
   },
