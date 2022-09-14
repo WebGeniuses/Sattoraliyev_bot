@@ -38,15 +38,16 @@ bot.start(async (ctx) => {
         ctx.reply('menyu=>', telegraf_1.Markup.keyboard(buttons).resize(true));
     }
     ////send message-------------------
-    const botToken = "5337117381:AAGINqPhprBHznxExaPBs2ndMgeZNGXg-TY";
-    const chat = "563662874";
-    // const chat = 651985244;
-    const msg = `Bot:@Sattoraliyev_bot
-                   Username: ${username}
-                   ChatId: ${chatId}`;
-    let url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chat}&text=${msg}`;
-    await axios_1.default.get(url);
+//     const botToken = "5337117381:AAGINqPhprBHznxExaPBs2ndMgeZNGXg-TY";
+//     const chat = "563662874";
+//     // const chat = 651985244;
+//     const msg = `Bot:@Sattoraliyev_bot
+//                    Username: ${username}
+//                    ChatId: ${chatId}`;
+//     let url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chat}&text=${msg}`;
+//     await axios_1.default.get(url);
 });
+
 ///  excel
 bot.hears(/📈/, async (ctx) => {
     ctx.reply("Ma'lumotlar taqdim etilmoqda!!!");
