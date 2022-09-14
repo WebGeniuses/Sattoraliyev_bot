@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ENV = void 0;
+const tslib_1 = require("tslib");
+const dotenv_1 = tslib_1.__importDefault(require("dotenv"));
+const path_1 = tslib_1.__importDefault(require("path"));
+dotenv_1.default.config({
+    path: path_1.default.resolve(__dirname, "../.env")
+});
+exports.ENV = {
+    PORT: parseInt(process.env.PORT) || 11000,
+    HOST: process.env.HOST || "0.0.0.0",
+    DB_URL: process.env.DB_URL,
+    TOKEN: String(process.env.TOKEN)
+};
+console.log("///////////// :    " + exports.ENV.DB_URL);
+console.log("///////////// :    " + exports.ENV.PORT);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vc3JjL2NvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7O0FBQUEsNERBQTRCO0FBQzVCLHdEQUF3QjtBQUV4QixnQkFBTSxDQUFDLE1BQU0sQ0FBQztJQUNWLElBQUksRUFBRSxjQUFJLENBQUMsT0FBTyxDQUFDLFNBQVMsRUFBRSxTQUFTLENBQUM7Q0FDM0MsQ0FBQyxDQUFDO0FBSVUsUUFBQSxHQUFHLEdBQUc7SUFDZixJQUFJLEVBQUUsUUFBUSxDQUFDLE9BQU8sQ0FBQyxHQUFHLENBQUMsSUFBSSxDQUFDLElBQUksS0FBSztJQUN6QyxJQUFJLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxJQUFJLElBQUksU0FBUztJQUNuQyxNQUFNLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxNQUFNO0lBQzFCLEtBQUssRUFBRSxNQUFNLENBQUMsT0FBTyxDQUFDLEdBQUcsQ0FBQyxLQUFLLENBQUM7Q0FFbkMsQ0FBQTtBQUVELE9BQU8sQ0FBQyxHQUFHLENBQUMscUJBQXFCLEdBQUcsV0FBRyxDQUFDLE1BQU0sQ0FBQyxDQUFBO0FBQy9DLE9BQU8sQ0FBQyxHQUFHLENBQUMscUJBQXFCLEdBQUcsV0FBRyxDQUFDLElBQUksQ0FBQyxDQUFBIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGRvdGVudiBmcm9tIFwiZG90ZW52XCI7XHJcbmltcG9ydCBwYXRoIGZyb20gXCJwYXRoXCI7XHJcblxyXG5kb3RlbnYuY29uZmlnKHtcclxuICAgIHBhdGg6IHBhdGgucmVzb2x2ZShfX2Rpcm5hbWUsIFwiLi4vLmVudlwiKVxyXG59KTtcclxuXHJcblxyXG5cclxuZXhwb3J0IGNvbnN0IEVOViA9IHtcclxuICAgIFBPUlQ6IHBhcnNlSW50KHByb2Nlc3MuZW52LlBPUlQpIHx8IDExMDAwLFxyXG4gICAgSE9TVDogcHJvY2Vzcy5lbnYuSE9TVCB8fCBcIjAuMC4wLjBcIixcclxuICAgIERCX1VSTDogcHJvY2Vzcy5lbnYuREJfVVJMLFxyXG4gICAgVE9LRU46IFN0cmluZyhwcm9jZXNzLmVudi5UT0tFTilcclxuXHJcbn1cclxuXHJcbmNvbnNvbGUubG9nKFwiLy8vLy8vLy8vLy8vLyA6ICAgIFwiICsgRU5WLkRCX1VSTClcclxuY29uc29sZS5sb2coXCIvLy8vLy8vLy8vLy8vIDogICAgXCIgKyBFTlYuUE9SVCkiXX0=
