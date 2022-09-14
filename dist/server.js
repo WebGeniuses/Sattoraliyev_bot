@@ -22,9 +22,9 @@ const server = (0, fastify_1.default)({
     logger: true
 });
 server.register(Connector_1.dbConnect);
-server.get('/', (req, res) => {
-    res.send("bot started;   Coder : Dev.Saturn");
-});
+// server.get('/', (req, res) => {
+//     res.send("bot started;   Coder : Dev.Saturn");
+// });
 server.register(bot_1.botStarter);
 function start() {
     server.listen({
